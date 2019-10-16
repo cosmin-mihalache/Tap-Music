@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: rgba(239, 251, 255, 0.836);
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+    
+header h1 {
+    margin: 2rem auto;
+    font-size: 3rem;
+}
+
+.pads {
+    background: coral;
+    width: 100%;
+    display: flex;
+
+
+} 
+
+.pads > div {
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+
+.pad1 {
+    background: cornflowerblue;
+}
+
+.pad1:hover {
+    background: rgba(50, 117, 241, 0.795);
+}
+.pad2 {
+    background: darkgoldenrod;
+}
+
+.pad2:hover {
+    background: rgb(160, 115, 0);
+}
+
+.pad3 {
+    background: rgb(237, 100, 196);
+}
+
+.pad3:hover {
+    background: rgb(212, 26, 156);
+}
+
+.pad4 {
+    background: rgb(100, 237, 134);
+}
+
+.pad4:hover {
+    background: rgb(13, 228, 67);
+}
+
+.pad5 {
+    background: rgba(237, 178, 100, 0.788);
+}
+
+.pad5:hover {
+    background: rgba(226, 144, 36, 0.788);
+}
+
+.pad6 {
+    background: rgb(232, 100, 237);
+}
+
+.pad6:hover {
+    background: rgb(216, 37, 223);
+}
+    /* Adding the moves of the bubble on the screen */
+@keyframes jump { 
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+}
+/* Styling the bubble */
+.visual > div {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    bottom: 0%;
+    z-index: -1;
+}
